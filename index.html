@@ -36,13 +36,25 @@
     #section0{
       background-color: rgb(71, 4, 138) !important;
     }
+    #section1{
+      background-color: rgb(138, 4, 4) !important;
+    }
+    #section2{
+      background-color: rgb(7, 0, 14) !important;
+    }
+    #section3{
+      background-color: rgb(38, 146, 38) !important;
+    }
+    #section4{
+      background-color: rgb(12, 127, 180) !important;
+    }
     img{
       width: 400px;
       border-radius: 100%;
       border: 2px solid white;
+      margin-bottom: 20px;
     }
     h1{
-      margin: 20px 0;
       font-size: 3rem !important;
       color: white;
     }
@@ -52,60 +64,49 @@
     }
     p{
       font-size: 2rem !important;
-      color: rgba(255, 255, 255, 0.8);
+      color: rgba(255, 255, 255, 0.7);
     }
     a{
       font-size: 1.5rem !important;
     }
-    .box-container{
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .box-full{
-      width: 100%;
-    }
-    .box-half{
-      width: 50%;
-      background-color: black;
-      color: white;
-    }
+  
   </style>
   <!-- Page-1 - Intro -->
 	<div class="section " id="section0">
     <img src="./images/me.jpg" alt="Ajmir Raziqi">
-		<h1>Ajmir Raziqi</h1>
-		<h2>''If others can enjoy it, why can't we!''</h2>
-		
+    <div class="intro">
+      <h1>Ajmir Raziqi</h1>
+      <h2>''If others can enjoy it, why can't we!''</h2>
+      <p>Salaam, I am a computer engineer.</p>
+    </div>
   </div>
 
 
   <!-- Page-2 - About Me -->
 	<div class="section" id="section1">
-    <div class="box-container">
-      <div class="box-full">
-        <p>Salaam, I am a computer engineer.
-          <br/>My job is to make sure that Afghans enjoy better life with the use of modern technology,
-          <br/>and put the work force (Afghan youths) into the woring environment.
-        </p>
-      </div>
-    </div>
-    <div class="box-container">
-      <div class="box-half">
-        <p class="box-title">MERN STACK DEV</p>
-      </div>
-      <div class="box-half">
-        <p class="box-title">AI DEV ESP. OPENCV</p>
-      </div>
+    <div class="intro">
+      <h1>My Mession And Vision</h1>
+      <p>My job is to make sure that Afghans enjoy better life with the use of modern technology, and put the work force (Afghan youths) into the woring environment.
+      </p>
     </div>
 	</div>
   
-  
-  <!-- Page-3 - Experience -->
+  <style>
+    .time-stamp{
+      float: left;
+      color: rebeccapurple;
+    }
+  </style>
+  <!-- Page-3 - Education and Experience -->
 	<div class="section" id="section2">
     <div class="intro">
-      <h1>Scroll Down</h1>
-			<p>And it will animate down to the first section</p>
+      <h2>Education</h2>
+			<p><span class="time-stamp">2019</span><br>BA from English Department of Kabul University</p>
+      <br/>
+      <h2>Experience</h2>
+			<p><span class="time-stamp">2019 - 2021</span><br>Software Developer as a freelancer</p>
+			<p><span class="time-stamp">2018 - 2021</span><br>English Senior Instructor at Atarud A Lingua</p>
+			<p><span class="time-stamp">2017 - 2020</span><br>English TA at Kabul University</p>
 		</div>
 	</div>
   
@@ -113,8 +114,8 @@
   <!-- Page-4 - Projects -->
 	<div class="section" id="section3">
     <div class="intro">
-      <h1>Scroll Down</h1>
-			<p>And it will animate down to the first section</p>
+      <h1>Projects</h1>
+			<p>Projects is coming soon on GitHub...</p>
 		</div>
 	</div>
   
@@ -122,8 +123,10 @@
   <!-- Page-5 - Contact -->
 	<div class="section" id="section4">
 		<div class="intro">
-			<h1>Scroll Down</h1>
-			<p>And it will animate down to the first section</p>
+			<h1>Contact</h1>
+      <p><span class="time-stamp">Email</span><br>ajmir.ng3@gmail.com</p>
+      <p><span class="time-stamp">Phone Number</span><br>0771210549</p>
+      <p><span class="time-stamp">GitHub</span><br>ajmir-github</p>
 		</div>
 	</div>
 </div>
