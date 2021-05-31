@@ -1,13 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Continuous Vertical scrolling - fullPage.js</title>
+	<meta name="author" content="Matthew Howell" />
+	<meta name="description" content="fullPage continuous scrolling demo." />
+	<meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="style//fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="style/examples.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
 </head>
 <body>
-  <h1>Ajmir Raziqi</h1>
-  <h2>My portfolio webpage!</h2>
+
+
+
+<!-- <ul id="menu">
+	<li data-menuanchor="page-1" class="active"><a href="#page-1">Intro</a></li>
+  <li data-menuanchor="page-2"><a href="#page-2">About Me</a></li>
+  <li data-menuanchor="page-3"><a href="#page-3">Experience</a></li>
+  <li data-menuanchor="page-4"><a href="#page-4">Projects</a></li>
+  <li data-menuanchor="page-5"><a href="#page-5">Contact</a></li>
+</ul> -->
+
+<div id="fullpage">
+  <style>
+    #section0{
+      background-color: rgb(71, 4, 138) !important;
+    }
+    img{
+      width: 400px;
+      border-radius: 100%;
+      border: 2px solid white;
+    }
+    h1{
+      margin: 20px 0;
+      font-size: 3rem !important;
+      color: white;
+    }
+    h2{
+      font-size: 2.5rem !important;
+      color: white;
+    }
+    p{
+      font-size: 2rem !important;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    a{
+      font-size: 1.5rem !important;
+    }
+    .box-container{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .box-full{
+      width: 100%;
+    }
+    .box-half{
+      width: 50%;
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <!-- Page-1 - Intro -->
+	<div class="section " id="section0">
+    <img src="./images/me.jpg" alt="Ajmir Raziqi">
+		<h1>Ajmir Raziqi</h1>
+		<h2>''If others can enjoy it, why can't we!''</h2>
+		
+  </div>
+
+
+  <!-- Page-2 - About Me -->
+	<div class="section" id="section1">
+    <div class="box-container">
+      <div class="box-full">
+        <p>Salaam, I am a computer engineer.
+          <br/>My job is to make sure that Afghans enjoy better life with the use of modern technology,
+          <br/>and put the work force (Afghan youths) into the woring environment.
+        </p>
+      </div>
+    </div>
+    <div class="box-container">
+      <div class="box-half">
+        <p class="box-title">MERN STACK DEV</p>
+      </div>
+      <div class="box-half">
+        <p class="box-title">AI DEV ESP. OPENCV</p>
+      </div>
+    </div>
+	</div>
+  
+  
+  <!-- Page-3 - Experience -->
+	<div class="section" id="section2">
+    <div class="intro">
+      <h1>Scroll Down</h1>
+			<p>And it will animate down to the first section</p>
+		</div>
+	</div>
+  
+  
+  <!-- Page-4 - Projects -->
+	<div class="section" id="section3">
+    <div class="intro">
+      <h1>Scroll Down</h1>
+			<p>And it will animate down to the first section</p>
+		</div>
+	</div>
+  
+  
+  <!-- Page-5 - Contact -->
+	<div class="section" id="section4">
+		<div class="intro">
+			<h1>Scroll Down</h1>
+			<p>And it will animate down to the first section</p>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="script/fullpage.min.js"></script>
+<script type="text/javascript" src="script/examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+      sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+      anchors: ['page-1', 'page-2', 'page-3', 'page-4', 'page-5'],
+      menu: '#menu',
+      continuousVertical: true,
+      afterLoad: function(anchorLink, index){
+            console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
+        },
+        onLeave: function(index, nextIndex, direction){
+            console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
+
+        },
+    });
+</script>
+
 </body>
 </html>
