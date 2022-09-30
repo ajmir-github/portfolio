@@ -39,9 +39,8 @@ function main() {
   observeTheClasses(classNameObserved);
 
   setTimeout(()=>{
-    // remove the loading
-    document.body.removeChild(
-      document.getElementById("page-loading")
-    )
-  }, 1000);
+    document
+      .getElementById("page-loading")
+      .style.display = "none";
+  }, 2000);
 }

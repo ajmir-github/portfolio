@@ -61,12 +61,13 @@ body{
 
 
 .my-btn{
+  text-decoration: none;
   width: 140px;
   border: 1px white solid;
   cursor: pointer;
   color: white;
   font-size: large;
-  padding: 0.4rem;
+  padding: 0.4rem 1rem;
   border-radius: .3rem;
   background: rgb(9,9,121);
   background: linear-gradient(to right,rgb(255, 0, 238), rgb(0, 242, 255), rgb(255, 0, 238));
