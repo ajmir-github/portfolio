@@ -25,8 +25,23 @@ const observer = new IntersectionObserver(entries=>{
   threshold:precentageOfVisiblity
 });
 
-// Classes
-document
-  .querySelectorAll(classNameObserved)
+// Classes to obsever
+function observeTheClasses(className) {
+  document
+  .querySelectorAll(className)
   .forEach(element => observer.observe(element));
+}
 
+
+
+function main() {
+  // activate the observer
+  observeTheClasses(classNameObserved);
+
+  setTimeout(()=>{
+    // remove the loading
+    document.body.removeChild(
+      document.getElementById("page-loading")
+    )
+  }, 1000);
+}
