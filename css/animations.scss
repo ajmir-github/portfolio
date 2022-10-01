@@ -4,69 +4,64 @@
 .slide-out-left,
 .slide-out-down,
 .slide-out-up,
-.rotate-out-right {
-  opacity: 0;
-  transition: 0.6s;
+.rotate-out-right
+{
+  opacity: .0;
+  transition: .6s;
 }
-
 .fade-in,
 .slide-in-right,
 .slide-in-left,
 .slide-in-down,
 .slide-in-up,
-.rotate-in-right {
+.rotate-in-right
+{
   opacity: 1;
   transition: 1.2s;
 }
 
 /* Slides */
-.slide-out-right {
+.slide-out-right{
   translate: 10vw 0;
 }
-
-.slide-in-right {
+.slide-in-right{
   translate: 0 0;
 }
 
-.slide-out-left {
+.slide-out-left{
   translate: -10vw 0;
 }
-
-.slide-in-left {
+.slide-in-left{
   translate: 0 0;
 }
 
-.slide-out-down {
+.slide-out-down{
   translate: 0 10vw;
 }
-
-.slide-in-down {
+.slide-in-down{
   translate: 0 0;
 }
 
-.slide-out-up {
+.slide-out-up{
   translate: 0 -10vw;
 }
-
-.slide-in-up {
+.slide-in-up{
   translate: 0 0;
 }
 
 /* Rotates */
-.rotate-out-right {
+.rotate-out-right{
   rotate: 10deg;
 }
-
-.rotate-in-right {
+.rotate-in-right{
   rotate: 0deg;
 }
 
-.rotate-out-left {
+.rotate-out-left{
   rotate: -10deg;
 }
-
-.rotate-in-left {
+.rotate-in-left{
   rotate: 0deg;
 }
 
-/* Scales *//*# sourceMappingURL=animations.css.map */
+/* Scales */
