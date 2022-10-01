@@ -2,7 +2,7 @@
 const classNameObserved = ".observe";
 const onShowAttributeName = "classShow";
 const onHideAttributeName = "classHide";
-const precentageOfVisiblity = 0.25;
+const precentageOfVisiblity = 0.1;
 
 // Funcs
 function toggleTheClasses(element, visible) {
@@ -41,6 +41,6 @@ function main() {
   setTimeout(()=>{
     document
       .getElementById("page-loading")
-      .style.display = "none";
+        .style.display = "none";
   }, 2000);
 }
