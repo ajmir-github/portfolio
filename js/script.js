@@ -6,30 +6,34 @@ const precentageOfVisiblity = 0.1;
 
 // Funcs
 function toggleTheClasses(element, visible) {
-  const classShow = element.getAttribute(onShowAttributeName);
-  const classHide = element.getAttribute(onHideAttributeName);
+  const classShow = element.attr(onShowAttributeName);
+  const classHide = element.attr(onHideAttributeName);
   if(visible){
-    element.classList.remove(classHide);
-    element.classList.add(classShow);
+    element.removeClass(classHide);
+    element.addClass(classShow);
   } else {
-    element.classList.remove(classShow);
-    element.classList.add(classHide);
+    element.removeClass(classShow);
+    element.addClass(classHide);
   }
 }
 
 // Main Object
 const observer = new IntersectionObserver(entries=>{
   entries
-    .forEach(e => toggleTheClasses(e.target, e.isIntersecting))
+    .forEach(e => toggleTheClasses($(e.target), e.isIntersecting))
 }, {
   threshold:precentageOfVisiblity
 });
 
 // Classes to obsever
 function observeTheClasses(className) {
-  document
-  .querySelectorAll(className)
-  .forEach(element => observer.observe(element));
+  // document
+  // .querySelectorAll(className)
+  // .forEach(element => observer.observe(element));
+  
+  // Jquery
+  for (const element of $(className))
+    observer.observe(element);
 }
 
 
