@@ -38,13 +38,12 @@ function observeTheClasses(className) {
 
 
 
-function main() {
+// On loaded
+$(()=>{
   // activate the observer
   observeTheClasses(classNameObserved);
-
+  
   setTimeout(()=>{
-    document
-      .getElementById("page-loading")
-        .style.display = "none";
+    $("#page-loading").remove();
   }, 2000);
-}
+})
