@@ -45,7 +45,6 @@ body {
 .my-card .card-img {
   width: 100%;
   border-radius: 1rem;
-  height: 200px;
   -o-object-position: center;
      object-position: center;
   -o-object-fit: cover;
@@ -55,7 +54,7 @@ body {
 .my-btn {
   text-decoration: none;
   width: 140px;
-  border: 1px white solid;
+  border: 1px transparent solid;
   cursor: pointer;
   color: white;
   font-size: large;
