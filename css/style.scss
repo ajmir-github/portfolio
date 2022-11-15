@@ -184,14 +184,15 @@ body{
 }
 
 
-.welcome-message{
-  min-height: 100vh;
+.welcome-container{
   background-image: url("../img/dark-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-
+}
+.welcome-message{
+  min-height: 100vh;
 }
 .welcome-message h4{
   color: var(--bs-light);
