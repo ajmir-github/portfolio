@@ -22,5 +22,5 @@ $(() => {
   // activate the observer
   for (const element of $(".observe")) observer.observe(element);
   // Remove the page loading element
-  setTimeout(() => $("#page-loading").remove(), 2000);
+  setTimeout(() => $("#page-loading").remove(), 1000);
 });
