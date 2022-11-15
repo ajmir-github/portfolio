@@ -217,15 +217,13 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
-
-.welcome-message {
+.welcome-container .row {
   min-height: 100vh;
 }
-
-.welcome-message h4 {
+.welcome-container .row h4 {
   color: var(--bs-light);
   font-weight: bolder;
-  font-family: monospace;
-  padding: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 1rem;
   background-color: var(--bs-orange);
 }/*# sourceMappingURL=style.css.map */
