@@ -1,8 +1,9 @@
 body {
   background-color: var(--bs-gray-dark);
   background: linear-gradient(to bottom, #36373a, #102e69);
-  overflow-x: hidden;
+  box-sizing: border-box;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .section {
